@@ -1,0 +1,108 @@
+/* *{
+    outline: solid 1px red;
+} */
+
+/* colores globales */
+
+:root{
+    --c1: #de8433;
+    --c2: white;
+    --c3:  rgb(142, 180, 178);
+    
+}
+
+@keyframes titulo1 {
+    0% {
+      transform: scale(1) translateY(0);
+      transform-origin: 50% 16%;
+    }
+  
+    100% {
+      transform: scale(1.25) translateY(-15px);
+      transform-origin: top;
+    }
+  }
+
+/* estilos generales */
+
+body{
+    margin: 0 auto;
+    max-width: 960px;
+    font-family: sans-serif;
+    background: var(--c1);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    width: 25%;
+    margin: 10px;
+}
+h1{
+    text-align: center;
+    background: var(--c2);
+    border-radius: 20px;
+    font-size: 36px;
+}
+
+h1:hover{
+    animation: titulo1 2s infinite;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+main{
+    background: var(--c2);
+    margin: 20px auto;    
+}
+
+/* estilos del main */
+main h3{
+    color: var(--c1);
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 36px;
+    text-align: center;
+    
+}
+.uno{
+    width: 80%;
+    margin: 20px auto;   
+    padding: 10px;
+}
+
+
+
+.uno li{    
+    padding: 20px;
+    margin: 5px;
+    background: var(--c3);  
+    border-left: 20px solid var(--c1);
+    transition: 0.3s;
+}
+
+.uno li:hover{    
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: var(--c2);
+    
+}
+
+
+/* Estilos del footer */
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+
